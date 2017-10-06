@@ -7,7 +7,7 @@
 	jal topla
 	
 	li $v0, 1
-	add $a0, $zero, $v1     #dondurulen deger $v1'den a0'a yazilir
+	add $a0, $zero, $v1     # dondurulen deger $v1'den a0'a yazilir
 	syscall
 	
 	li $v0, 10
