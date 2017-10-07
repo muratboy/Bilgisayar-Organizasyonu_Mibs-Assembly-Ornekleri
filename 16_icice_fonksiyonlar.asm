@@ -24,7 +24,7 @@
 	
 	#fonksiyon icinden fonksiyon cagirma
 	addi $sp, $sp, -4
-	sw   $ra, 4($sp) # *** icice fonksiyon kullanýmýnda donus adresini stack'e itiyoruz
+	sw   $ra, 4($sp) # *** icice fonksiyon kullaniminda donus adresini stack'e itiyoruz
     	jal print
 	lw   $ra, 4($sp) # *** eski donus adresini stackten cek
 	addi $sp, $sp, 4
