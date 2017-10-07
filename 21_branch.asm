@@ -10,7 +10,7 @@
 	beq  $t0, $t1, sayilarEsit
 	# sayilar birbirine esit degilse sayilarEsitDegile git
 	bne  $t0, $t1, sayilarEsitDegil
-#       b sayilarEsitDegil --> ayni sonucu verir(kosulsuz dallanma)
+	# b sayilarEsitDegil --> ayni sonucu verir(kosulsuz dallanma)
 	
 	#programin sonu
 	li $v0, 10
