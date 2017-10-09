@@ -7,11 +7,11 @@
 	addi $t1, $zero, 11
 
 # aslinda daha cok satirla yazilan kodlarin kalip komutlarla kisaltilmasi
-#pseudo(yalanci) komutlar -> bgt , blt ...
+# pseudo(yalanci) komutlar -> bgt , blt ...
 	bgt  $t0, $t1, ilkBuyuk
 	blt  $t0, $t1, ikinciBuyuk
 	
-	#programin sonu
+	# programin sonu
 	li $v0, 10
 	syscall
 	
