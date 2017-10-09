@@ -1,5 +1,5 @@
 .data
-	dizi: .space 12 # 4*3
+	dizi: .space 12 	# 4*3
 .text
 	addi $t0, $zero, 0
 	addi $s0, $zero, 4
