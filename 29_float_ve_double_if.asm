@@ -9,8 +9,8 @@
 		lwc1 $f2, sayi2
 		
 		c.eq.s $f0, $f2 # sayilar esitse bayragi true yap degilse false
-		bc1t true # bayrak true ise true etiketine git
-		bc1f false # bayrak false ise false etiketine git
+		bc1t true 	# bayrak true ise true etiketine git
+		bc1f false 	# bayrak false ise false etiketine git
 	
 	li $v0, 10
 	syscall
