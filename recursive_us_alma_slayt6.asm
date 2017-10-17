@@ -1,8 +1,8 @@
 .data
 .text
 	li $t0, 1
-	li $t1, 5	# sayinin ussu
-	li $t2, 2	# sayinin tabani
+	li $t1, 5	    # sayinin ussu
+	li $t2, 2	    # sayinin tabani
 	
 	jal power
 	
@@ -10,7 +10,7 @@
 	add $a0, $zero, $t0 #sonucu yazdirma
 	syscall
 	
-	li $v0, 10	#son
+	li $v0, 10	    #son
 	syscall
 	
     power:
