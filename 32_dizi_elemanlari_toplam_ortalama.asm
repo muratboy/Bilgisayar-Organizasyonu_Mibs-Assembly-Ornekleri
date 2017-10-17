@@ -5,15 +5,15 @@
 	ortalama:  .asciiz "\nortalama: "
 .text
 	main:
-		la $t0, dizi	#dizinin baslangic adresi
-		li $t1, 0	# i=0
+		la $t0, dizi		#dizinin baslangic adresi
+		li $t1, 0		# i=0
 		lw $t2, uzunluk
-		li $t3, 0	#toplam = 0
+		li $t3, 0		#toplam = 0
 	toplamDongusu:
-		lw $t4, ($t0)	# t4 = dizi[i]
-		add $t3, $t3, $t4 # sum += dizi[i]
+		lw $t4, ($t0)		# t4 = dizi[i]
+		add $t3, $t3, $t4 	# sum += dizi[i]
 		
-		add $t1, $t1, 1 # i++
+		add $t1, $t1, 1 	# i++
 		add $t0, $t0, 4
 		
 		blt $t1, $t2, toplamDongusu # i<uzunluk ise donguye devam
